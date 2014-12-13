@@ -28,3 +28,5 @@ distributed representations one layer at a time."
 ### Part II - Reconstruction
 
 ### Expected results
+- Better results than using backpropagation only?
+- An efficient bias decision approach?
