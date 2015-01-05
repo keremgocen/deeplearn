@@ -5,7 +5,7 @@ Implementations for Artificial Neural Networks(CSE565 of Isik University)
 
 # Project4
 
-[Hinton. 2007. Learning multiple layers of representation.](http://www.cs.toronto.edu/~fritz/absps/tics.pdf) will be implemented on [The minst database](http://yann.lecun.com/exdb/mnist/) in 2 parts
+[Hinton. 2007. Learning multiple layers of representation.](http://www.cs.toronto.edu/~fritz/absps/tics.pdf) will be implemented on [The MNIST database](http://yann.lecun.com/exdb/mnist/) in 2 parts
 
 Abstract:
 "To achieve its impressive performance in tasks such as
