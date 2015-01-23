@@ -17,7 +17,7 @@ public class SkyNet {
         int numberOfInputs = 4;
 
         final String path = "/Users/keremgocen/Blesh/git-repos/deeplearn/MNIST";
-        final String labelsPath = path + "/data0";
+        final String labelsPath = path + "/train-labels.idx1-ubyte.gz";
         final String imagesPath = path + "/train-images.idx3-ubyte.gz";
 
         // read MNIST data
