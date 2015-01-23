@@ -85,13 +85,13 @@ public class MNISTReader {
 
         int magicNumber = labelsByteBuffer.getInt();
         System.out.println("magicNumber hex:" + Integer.toHexString(magicNumber) + " binary:" + Integer.toBinaryString(magicNumber));
-        if (magicNumber != 2056) {
-            System.err.println("Label file has wrong magic number: " + magicNumber + " (should be 2056)");
+        if (magicNumber != 2049) {
+            System.err.println("Label file has wrong magic number: " + magicNumber + " (should be 2049)");
             System.exit(0);
         }
         magicNumber = imagesByteBuffer.getInt();
-        if (magicNumber != 2056) {
-            System.err.println("Image file has wrong magic number: " + magicNumber + " (should be 2056)");
+        if (magicNumber != 2051) {
+            System.err.println("Image file has wrong magic number: " + magicNumber + " (should be 2051)");
             System.exit(0);
         }
         int numLabels = labelsByteBuffer.getInt();
