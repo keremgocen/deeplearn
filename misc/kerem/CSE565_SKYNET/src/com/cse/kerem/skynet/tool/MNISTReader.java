@@ -70,15 +70,16 @@ public class MNISTReader {
 //        DataInputStream images = new DataInputStream(new FileInputStream(imagesFileName));
 
         int magicInt = labelsByteBuffer.getInt();
-        long magicAfter = (long)(magicInt & 0xFFFFFFFF);
-        System.out.println("byte:" + magicInt + " hex:" + Integer.toHexString(magicInt) + " after:" + magicAfter + " hex:" + Long.toHexString(magicAfter));
+        long magicAfter = (long)(magicInt & 0xFFFFFFFFL);
+        System.out.println("magic int:" + magicInt + " hex:" + Integer.toHexString(magicInt) + " after:" + magicAfter + " hex:" + Long.toHexString(magicAfter));
 
+        labelsByteBuffer.rewind();
 
-        // debug
+        // debug byte buffer
         while(labelsByteBuffer.hasRemaining()) {
             byte b = labelsByteBuffer.get();
             int after = (int)(b & 0xFF);
-            System.out.println("byte:" + b + " hex:" + Integer.toHexString(b) + " after:" + after + " hex:" + Integer.toHexString(after));
+            System.out.println("byte:" + b + " hex:" + Byte.toString(b) + " after:" + after + " hex:" + Integer.toHexString(after));
         }
 
         labelsByteBuffer.reset();
